@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var audio = document.getElementById("background-audio");
   const openButton = document.getElementById("get-content");
   const buttonAudio = document.getElementById("trigger");
   const autoplayAudio = document.querySelector("audio[autoplay]");
@@ -8,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const volumeChangeDuration = 1000;
   const volumeChangeInterval = 40;
   let volumeStep = 0.02;
-
-  audio.muted = false;
 
   openButton.addEventListener("click", function () {
     buttonAudio.play();
